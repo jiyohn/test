@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="All Completed Chores" max_length="40" name="x_604375_family_ch_chore_points" sizeclass="0" type="collection">
+        <element label="Completed chore" max_length="40" name="completed_chore" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Points" max_length="40" name="points" type="integer"/>
+    </element>
+</database>

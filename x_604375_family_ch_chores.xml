@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Family Chores" max_length="40" name="x_604375_family_ch_chores" sizeclass="71" type="collection">
+        <element default="true" label="Assignable" max_length="40" name="active" type="boolean"/>
+        <element choice="1" label="Applies to (age)" mandatory="true" max_length="20" name="age_limit" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="5" sequence="0" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="1" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="2" value="7"/>
+                <element inactive_on_update="false" label="8" sequence="3" value="8"/>
+                <element inactive_on_update="false" label="9" sequence="4" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="5" value="10"/>
+                <element inactive_on_update="false" label="11" sequence="6" value="11"/>
+                <element inactive_on_update="false" label="12" sequence="7" value="12"/>
+                <element inactive_on_update="false" label="13" sequence="8" value="13"/>
+                <element inactive_on_update="false" label="14" sequence="9" value="14"/>
+                <element inactive_on_update="false" label="15" sequence="10" value="15"/>
+                <element inactive_on_update="false" label="16" sequence="11" value="16"/>
+                <element inactive_on_update="false" label="17" sequence="12" value="17"/>
+                <element inactive_on_update="false" label="18" sequence="13" value="18"/>
+                <element inactive_on_update="false" label="37" sequence="14" value="37"/>
+                <element inactive_on_update="false" label="39" sequence="15" value="39"/>
+            </choice>
+        </element>
+        <element label="Chore completion criteria" mandatory="true" max_length="1000" name="chore_completion_details" type="string"/>
+        <element label="Chore Name" mandatory="true" max_length="100" name="chore_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Conducted on" max_length="40" name="day_s_required" type="string">
+            <choice>
+                <element inactive_on_update="false" label="1 - Monday" sequence="4" value="1 - Monday"/>
+                <element inactive_on_update="false" label="2 - Tuesday" sequence="5" value="2 - Tuesday"/>
+                <element inactive_on_update="false" label="3 - Wednesday" sequence="6" value="3 - Wednesday"/>
+                <element inactive_on_update="false" label="4 - Thursday" sequence="7" value="4 - Thursday"/>
+                <element inactive_on_update="false" label="5 - Friday" sequence="8" value="5 - Friday"/>
+                <element inactive_on_update="false" label="6 - Saturday" sequence="9" value="6 - Saturday"/>
+                <element inactive_on_update="false" label="7 - Sunday" sequence="10" value="7 - Sunday"/>
+            </choice>
+        </element>
+        <element default="5" label="Points Awarded" mandatory="true" max_length="40" name="points_awarded" read_only="true" type="integer"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
